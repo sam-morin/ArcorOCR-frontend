@@ -18,3 +18,7 @@ Requirments:
    This should not store any data and should NEVER communicate over plain HTTP (always use TLS to secure communcication and transmission of files)
 - Simplicity: 
    This should be incredibly simple to use and pickup on. Keep things basic. Focus on conversion.
+
+Additional:
+- CI/CD:
+   This should be easy to update/deploy changes to production quickly
