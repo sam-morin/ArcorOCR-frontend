@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Toggle from './components/Toggle';
 import { Grid } from '@mui/material';
 
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.PROD === 'production';
 const uploadEndpointRoot = isProduction ? 'https://arcorocr.com/upload' : 'http://localhost:5002/upload';
 
 // // const uploadEndpointRoot = 'https://arcorocr.com/upload'
