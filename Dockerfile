@@ -7,6 +7,8 @@ WORKDIR /app
 # Copy package.json and package-lock.json (if available)
 COPY package*.json ./
 
+ENV NODE_ENV production
+
 # Install dependencies
 RUN npm install
 
@@ -18,8 +20,6 @@ RUN npm run build
 
 # Expose the port that your app will run on
 EXPOSE 3000
-
-ENV NODE_ENV production
 
 # Start the React app
 CMD ["npm", "start"]
