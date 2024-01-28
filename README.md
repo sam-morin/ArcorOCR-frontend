@@ -7,7 +7,7 @@ A simple PDF OCR overlay tool with a public web page.
 The backend currently uses Python but I am working on a Go implementation.
 
 ### Background:
-This was created to demonstrate/prove the ease of implmenting an OCR scanner on a backend for a web application.
+This was created to demonstrate/prove the ease of implmenting an OCR scanner on a backend for a web application. A vendor is forcing it's clients to adopt OCR capable PDF processors to utilize their 'PDF scanning' feature. This is because the PDFs that they are providing the vendor with now are not searchable.
 
 Requirments:
 - Speed: 
