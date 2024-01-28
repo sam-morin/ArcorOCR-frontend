@@ -1,4 +1,4 @@
-![ArcorOCR](./public/pdf_512.png)
+![ArcorOCR](./public/pdf_128.png)
 
 # ArcorOCR - https://ArcorOCR.com
 
