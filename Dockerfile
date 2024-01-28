@@ -19,7 +19,5 @@ RUN npm run build
 # Expose the port that your app will run on
 EXPOSE 3000
 
-ENV BACKEND_URL=https://arcorocr.com/upload
-
-# Start the React app
-CMD ["npm", "start"]
+# Start the React app with a default value for the backend URL
+CMD ["sh", "-c", "npm start -- --backend-url=${BACKEND_URL:-http://localhost:5002/upload}"]
