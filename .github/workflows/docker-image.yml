@@ -12,9 +12,6 @@ jobs:
 
     runs-on: self-hosted
 
-    env:
-      PROD: 'production'
-
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
@@ -25,4 +22,5 @@ jobs:
       continue-on-error: true
 
     - name: Deploy the Docker image
-      run: docker run -d --restart unless-stopped -p 3000:3000 arcorocr-frontend
+      run: docker run -d --restart unless-stopped -e BACKEND_URL=https://arcorocr.com/upload -p 3000:3000 arcorocr-frontend
+
