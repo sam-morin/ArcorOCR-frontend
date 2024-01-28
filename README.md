@@ -21,4 +21,4 @@ Requirments:
 
 Additional:
 - CI/CD:
-   This should be easy to update/deploy changes to production quickly
+   This should be easy to update/deploy changes to production quickly.

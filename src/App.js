@@ -6,8 +6,11 @@ import Footer from './components/Footer';
 import Toggle from './components/Toggle';
 import { Grid } from '@mui/material';
 
-// const uploadEndpointRoot = 'https://arcorocr.com/upload'
-const uploadEndpointRoot = 'http://localhost:5002/upload'
+const isProduction = process.env.NODE_ENV === 'production';
+const uploadEndpointRoot = isProduction ? 'https://arcorocr.com/upload' : 'http://localhost:5002/upload';
+
+// // const uploadEndpointRoot = 'https://arcorocr.com/upload'
+// const uploadEndpointRoot = 'http://localhost:5002/upload'
 
 function App() {
   const [uploading, setUploading] = useState(false);
