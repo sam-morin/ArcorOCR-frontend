@@ -1,0 +1,25 @@
+name: Docker CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag arcorocr-frontend
+
+    - name: Kill all containers
+      run: if [ $(docker ps -a | wc -l) -gt 1 ]; then docker ps -aq | xargs docker stop | xargs docker rm; fi
+      continue-on-error: true
+
+    - name: Deploy the Docker image
+      run: docker run -d --restart unless-stopped -p 3000:3000 arcorocr-frontend
