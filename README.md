@@ -1,6 +1,6 @@
 ![ArcorOCR](./public/pdf_128.png)
 
-# ArcorOCR - [ArcorOCR.com](https://ArcorOCR.com)
+# [ArcorOCR.com](https://ArcorOCR.com)
 
 A simple PDF OCR overlay tool with a public web page. 
 
