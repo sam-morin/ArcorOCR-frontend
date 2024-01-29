@@ -3,6 +3,16 @@ html, body {
   /* background-color: #154367; */
 }
 
+a {
+  color: #fff;
+}
+a:active {
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+
 .barlow {
   font-family: 'Barlow';
 }
@@ -64,7 +74,7 @@ input {
 
 .App-inner {
   /* border-radius: 75px; */
-  border-radius: 55px;
+  border-radius: 55px; 
   /* background-color: rgb(216, 237, 255); */
   background-color: rgb(186, 222, 255);
   /* padding: 50px; */

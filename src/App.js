@@ -14,13 +14,8 @@ function App() {
   const [removeToggle, setRemoveToggle] = useState(false);
   const [renameToggle, setRenameToggle] = useState(false);
   const [newName, setNewName] = useState('');
-  const [currentName, setCurrentName] = useState('');
 
   const uploadEndpoint = uploadEndpointRoot + (removeToggle ? '/remove' : '')
-
-  // const handleFileUploadStage = async (file) => {
-  //   setCurrentName(file.name)
-  // }
 
   const handleFileUpload = async (file) => {
     setUploading(true);
@@ -84,9 +79,6 @@ function App() {
     <div className="App" onDrop={handleDrop} onDragOver={handleDragOver}>
       <div className='App-inner'>
         <Header removeToggled={removeToggle} />
-        {/* <div style={{paddingBottom: '10px', display: 'flex', justifyContent: "center"}}>
-          <Toggle label={"Remove text layer from PDF"} handleToggle={handleToggle} removeToggled={removeToggle} tooltipTitle={`${removeToggle ? 'Disable this to perfrom OCR and apply a text layer to the original PDF' : 'Enable this to strip text from PDF with existing text layer'}`} />
-        </div> */}
         <Grid container spacing={5}>
           <Grid item sx={6}>
             <div style={{paddingBottom: '10px', display: 'flex', justifyContent: "center"}}>
@@ -104,7 +96,8 @@ function App() {
               <div style={{paddingBottom: "10px", display: 'flex', justifyContent: "center", width: "100%"}}>
                 <input 
                   type='text'
-                  value={newName === '' ? currentName : newName}
+                  // value={newName === '' ? currentName : newName}
+                  value={newName}
                   onChange={(e) => setNewName(e.target.value)}
                   style={{
                     backgroundColor: "rgb(186, 222, 255)",
