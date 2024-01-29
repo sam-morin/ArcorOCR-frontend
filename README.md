@@ -28,7 +28,7 @@ Additional:
 - Speed:
    The frontend is running in a docker container with sufficient resources
 - Scalability:
-   Currently running in a Github Runner with no issues. Could add an additional containers if necessary. Looking into Podman.
+   Currently running in a single Github Runner producing 2 containers (shouldn't need more for frontend). Equal weight LB with nginx. Looking into Podman.
 - Security:
    Confirm production application is running over TLS and employing HSTS on the root domain. TLS 1.3 only. Various other Cloudflare protections.
 - Simplicity: 
