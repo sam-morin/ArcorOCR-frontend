@@ -4,6 +4,8 @@
 
 A simple PDF OCR overlay (add/remove) tool with a public web page. 
 
+![ArcorOCR SCR1](./public/ArcorOCR-scr1.png)
+
 ### Background:
 This was created to demonstrate/prove the ease of implmenting an OCR scanner/converter/generator backend functionality for a web application. 
 
