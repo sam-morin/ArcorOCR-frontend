@@ -1,13 +1,13 @@
 ![ArcorOCR](./public/pdf_128.png)
 
-# [ArcorOCR.com](https://ArcorOCR.com) Frontend | A simple PDF OCR for the OCR-less
+# [ArcorOCR.com](https://ArcorOCR.com) Frontend | PDF OCR for the OCR-less
 
-A simple PDF OCR overlay tool with a public web page. 
-
-The backend currently uses Python but I am working on a Go implementation.
+A simple PDF OCR overlay (add/remove) tool with a public web page. 
 
 ### Background:
-This was created to demonstrate/prove the ease of implmenting an OCR scanner on a backend for a web application. A vendor is forcing it's clients to adopt OCR capable PDF processors to utilize their 'PDF scanning' feature. This is because the PDFs that they are providing the vendor with now are not searchable.
+This was created to demonstrate/prove the ease of implmenting an OCR scanner/converter/generator backend functionality for a web application. 
+
+A vendor is essentially forcing it's clients to adopt OCR capable PDF processors to utilize their 'PDF scanning' feature. I have now become involved, and naturally I wanted to put my money where my mouth is. Their documentation says nothing about any specific PDF requirements and the web application spits out a somewhat vague error when using a non-searchable PDF. They aren't handling cases where the PDF is flat/doesn't already contain a text layer. In my opinion, this responsibility should fall within the purview of the vendor. They should handle this case where there is no OCR layer, then scan and generate one. If they could really nail down an OCR function - it could potentially contribute to more reliable/controllable post-processing and possibly less support tickets/interaction. 
 
 ## Objectives:
 - Speed: 
