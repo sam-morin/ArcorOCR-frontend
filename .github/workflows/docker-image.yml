@@ -21,6 +21,9 @@ jobs:
       run: if [ $(docker ps -a | wc -l) -gt 1 ]; then docker ps -aq | xargs docker stop | xargs docker rm; fi
       continue-on-error: true
 
-    - name: Deploy the Docker image
-      run: docker run -d --restart unless-stopped -e BACKEND_URL=https://arcorocr.com/upload -p 3000:3000 arcorocr-frontend
+    - name: Deploy the Docker image 1
+      run: docker run -d --restart unless-stopped -p 3000:3000 arcorocr-frontend
+
+    - name: Deploy the Docker image 2
+      run: docker run -d --restart unless-stopped -p 3001:3000 arcorocr-frontend
 
