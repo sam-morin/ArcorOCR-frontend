@@ -14,6 +14,7 @@ function App() {
   const [removeToggle, setRemoveToggle] = useState(false);
   const [renameToggle, setRenameToggle] = useState(false);
   const [newName, setNewName] = useState('');
+  const [tooManyUploads, setTooManyUploads] = useState();
 
   const uploadEndpoint = uploadEndpointRoot + (removeToggle ? '/remove' : '')
 
@@ -46,6 +47,7 @@ function App() {
       } else {
         console.error('Error uploading file:', response.statusText);
         setSuccess(false);
+        response.status === 429 ? (setTooManyUploads(true) && setTimeout(() => {setTooManyUploads(false) && setSuccess(true)}, 20000)) : setTooManyUploads(false)
       }
     } catch (error) {
       console.error('Error uploading file:', error);
@@ -120,6 +122,7 @@ function App() {
             renameToggle={renameToggle}
             renameToggleAction={'Upload'}
             handleFileUpload={handleFileUpload}
+            tooManyUploads={tooManyUploads}
           />
         <Footer />
       </div>

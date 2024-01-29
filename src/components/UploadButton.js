@@ -5,7 +5,7 @@ import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutli
 import ErrorOutlineOutlinedIcon from '@mui/icons-material/ErrorOutlineOutlined';
 import CircularProgress from '@mui/material/CircularProgress';
 
-export default function UploadButton({ uploading, success, handleFileUpload, renameToggleAction }) {
+export default function UploadButton({ uploading, success, handleFileUpload, renameToggleAction, tooManyUploads }) {
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     if (file) {
@@ -37,6 +37,7 @@ export default function UploadButton({ uploading, success, handleFileUpload, ren
         style={{ display: 'none' }}
         id="file-input"
         onChange={handleFileChange}
+        disabled={tooManyUploads}
       />
       <label htmlFor="file-input">
         <Button
@@ -54,7 +55,7 @@ export default function UploadButton({ uploading, success, handleFileUpload, ren
           startIcon={
             success ? (
               <CheckCircleOutlineOutlinedIcon />
-            ) : success === false ? (
+            ) : (success === false || tooManyUploads) ? (
               <ErrorOutlineOutlinedIcon />
             ) : uploading ? (
               <CircularProgress size={20} thickness={5.5} style={{ color: 'white' }} />
@@ -65,6 +66,8 @@ export default function UploadButton({ uploading, success, handleFileUpload, ren
         >
           {success
             ? 'Downloaded PDF'
+            : tooManyUploads
+            ? `Hey! Too many requests!`
             : success === false
             ? 'Something went wrong!'
             : uploading
