@@ -40,3 +40,39 @@ I wanted to see what kind of investment this would incurr against performance to
 # Screenshot
 
 ![ArcorOCR SCR1](./public/ArcorOCR-scr1.png)
+
+# Running
+
+### Production
+
+1. Pull the source and CD
+```shell
+git pull https://github.com/sam-morin/ArcorOCR-frontend.git && cd ArcorOCR-frontend
+```
+
+2. Build image
+```shell
+docker build . -t arcorocr-frontend
+```
+
+3. Run the image
+```shell
+docker run -d --restart unless-stopped -p SOME_PUBLIC_PORT:3000 arcorocr-frontend
+```
+
+### Development
+
+1. Pull the source and CD
+```shell
+git pull https://github.com/sam-morin/ArcorOCR-frontend.git && cd ArcorOCR-frontend
+```
+
+2. Install node modules
+```shell
+npm install
+```
+
+3. Run hot-reload dev server
+```shell
+npm run start
+```
