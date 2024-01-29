@@ -4,8 +4,6 @@
 
 A simple PDF OCR overlay (add/remove) tool with a public web page. 
 
-![ArcorOCR SCR1](./public/ArcorOCR-scr1.png)
-
 ### Background:
 This was created to demonstrate/prove the ease of implmenting an OCR scanner/converter/generator backend functionality for a web application. 
 
@@ -38,3 +36,7 @@ I wanted to see what kind of investment this would incurr against performance to
    Frontend application is very easy to use. Choose a file to convert, wait for it to convert & download.
 - CI/CD:
    Using Github Action Runner(s) for frontend.
+
+# Screenshot
+
+![ArcorOCR SCR1](./public/ArcorOCR-scr1.png)
