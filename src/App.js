@@ -80,12 +80,12 @@ function App() {
       <div className='App-inner'>
         <Header removeToggled={removeToggle} />
         <Grid container spacing={5}>
-          <Grid item sx={6}>
+          <Grid item>
             <div style={{paddingBottom: '10px', display: 'flex', justifyContent: "center"}}>
               <Toggle label={"Remove text layer from PDF"} handleToggle={handleToggle} removeToggled={removeToggle} tooltipTitle={`${removeToggle ? 'Disable this to perfrom OCR and apply a text layer to the original PDF' : 'Enable this to strip text from PDF with existing text layer'}`} />
             </div>
           </Grid>
-          <Grid item sx={6}>
+          <Grid item>
             <div style={{paddingBottom: "10px", display: 'flex', justifyContent: "center"}}>
               <Toggle label={"Rename PDF"} handleToggle={handleToggleRename} removeToggled={renameToggle} />
             </div>
