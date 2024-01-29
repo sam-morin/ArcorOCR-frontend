@@ -56,11 +56,7 @@ export default function Toggle ({label, handleToggle, removeToggled, tooltipTitl
           <Tooltip title={tooltipTitle} placement="top">
             <Stack direction="row" spacing={1} alignItems="center">
                 <AntSwitch checked={removeToggled} onChange={handleCheckToggle} inputProps={{ 'aria-label': 'ant design' }} />
-                {removeToggled ? (
-                    <Typography style={{fontFamily: "Quicksand", cursor: "pointer"}} onClick={handleCheckToggle}>{label}</Typography>
-                ) : (
-                    <Typography className="disabled-color" style={{fontFamily: "Quicksand", cursor: "pointer"}} onClick={handleCheckToggle}>{label}</Typography>
-                )}
+                <Typography className={!removeToggled ? "disabled-color" : ''} style={{fontFamily: "Quicksand", cursor: "pointer"}} onClick={handleCheckToggle}>{label}</Typography>
             </Stack>
           </Tooltip>
         </>

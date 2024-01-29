@@ -96,7 +96,6 @@ function App() {
               <div style={{paddingBottom: "10px", display: 'flex', justifyContent: "center", width: "100%"}}>
                 <input 
                   type='text'
-                  // value={newName === '' ? currentName : newName}
                   value={newName}
                   onChange={(e) => setNewName(e.target.value)}
                   style={{
