@@ -1,6 +1,6 @@
 ![ArcorOCR](./public/pdf_128.png)
 
-# [ArcorOCR.com](https://ArcorOCR.com) | PDF OCR for the OCR-less
+# [ArcorOCR.com](https://ArcorOCR.com) Frontend | A simple PDF OCR for the OCR-less
 
 A simple PDF OCR overlay tool with a public web page. 
 
@@ -23,7 +23,7 @@ Additional:
 - CI/CD:
    This should be easy to update/deploy changes to production quickly
 
-## Implemented
+## Implemented:
 (Scope: **frontend**)
 - Speed:
    The frontend is running in a docker container with sufficient resources

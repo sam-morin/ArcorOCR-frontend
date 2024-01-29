@@ -63,7 +63,8 @@ input {
 }
 
 .App-inner {
-  border-radius: 75px;
+  /* border-radius: 75px; */
+  border-radius: 55px;
   /* background-color: rgb(216, 237, 255); */
   background-color: rgb(186, 222, 255);
   /* padding: 50px; */
