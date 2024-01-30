@@ -7,7 +7,7 @@
     <img src="./public/pdf_512.png" alt="Logo" width="140">
   </a>
 
-  <h1 align="center"><a href="https://arcorocr.com" target="_blank">ArcorOCR.com</a> | Backend</h1>
+  <h1 align="center"><a href="https://arcorocr.com" target="_blank">ArcorOCR.com</a> | Frontend</h1>
 
   <h3 align="center">
     PDF OCR for the OCR-less
