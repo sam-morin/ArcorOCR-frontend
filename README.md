@@ -14,7 +14,7 @@
 [![Production Status](https://img.shields.io/badge/Production_Status-active-green)](https://arcorocr.com)
 
   <p align="center">
-    <h3>PDF OCR for the OCR-less | View the <a href="https://github.com/sam-morin/ArcorOCR-backend-python">Backend Repo (Python)</a></h3>
+    <h3>PDF OCR for the OCR-less | <a href="https://github.com/sam-morin/ArcorOCR-backend-python">Backend Repo (Python)</a></h3>
     <a href="https://github.com/sam-morin/ArcorOCR-frontend-python/issues">Report Bug</a>
     ·
     <a href="https://github.com/sam-morin/ArcorOCR-frontend-python/issues">Request Feature</a>
