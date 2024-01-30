@@ -1,6 +1,27 @@
-![ArcorOCR](./public/pdf_128.png)
+<!-- ![ArcorOCR](./public/pdf_128.png)
 
-# [ArcorOCR.com](https://ArcorOCR.com) Frontend | PDF OCR for the OCR-less
+# [ArcorOCR.com](https://ArcorOCR.com) Frontend | PDF OCR for the OCR-less -->
+
+<div align="center">
+  <a href="https://arcorocr.com" target="_blank">
+    <img src="/pdf_512.png" alt="Logo" width="140">
+  </a>
+
+  <h1 align="center"><a href="https://arcorocr.com" target="_blank">ArcorOCR.com</a> | Backend</h1>
+
+  <h3 align="center">
+    PDF OCR for the OCR-less
+    <!-- <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br /> -->
+    <br />
+    <a href="https://arcorocr.com">View Demo</a>
+    ·
+    <a href="https://github.com/sam-morin/ArcorOCR-backend-python/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/sam-morin/ArcorOCR-backend-python/issues">Request Feature</a>
+  </h3>
+</div>
 
 A simple PDF OCR overlay (add/remove) tool with a public web page. 
 
