@@ -14,7 +14,6 @@
     <!-- <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br /> -->
-    <br /> 
     <a href="https://arcorocr.com">View Live</a>
     ·
     <a href="https://github.com/sam-morin/ArcorOCR-backend-python/issues">Report Bug</a>
