@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://arcorocr.com" target="_blank">
-    <img src="./public/pdf_512.png" alt="Logo" width="140">
+    <img src="./public/pdf_512.png" alt="Logo" width="220">
   </a>
 
   <h1 align="center"><a href="https://arcorocr.com" target="_blank">ArcorOCR.com</a> | Frontend</h1>
