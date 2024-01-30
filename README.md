@@ -9,21 +9,12 @@
 
   <h1 align="center"><a href="https://arcorocr.com" target="_blank">ArcorOCR.com</a> | Frontend</h1>
 
-  [![Docker Image CI](https://github.com/sam-morin/ArcorOCR-frontend/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/sam-morin/ArcorOCR-frontend/actions/workflows/docker-image.yml)
-[![Known Vulnerabilities](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json&style=flat-square)](https://snyk.io/test/github/dwyl/hapi-auth-jwt2?targetFile=package.json)
-[![Production Status](https://img.shields.io/badge/Production_Status-active-green)](https://arcorocr.com)
-
   <p align="center">
     <h3>PDF OCR for the OCR-less</h3>
-    <!-- <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br /> -->
-    <a href="https://arcorocr.com">View Live</a>
-    ·
     <a href="https://github.com/sam-morin/ArcorOCR-frontend-python/issues">Report Bug</a>
     ·
     <a href="https://github.com/sam-morin/ArcorOCR-frontend-python/issues">Request Feature</a>
-    ·
+    <br/>
     <a href="https://github.com/sam-morin/ArcorOCR-frontend?tab=readme-ov-file#screenshot">Screenshot(s)</a>
     .
     <a href="https://github.com/sam-morin/ArcorOCR-frontend?tab=readme-ov-file#running">Build/Develop</a>
