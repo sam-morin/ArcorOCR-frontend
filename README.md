@@ -67,7 +67,11 @@ I wanted to see what kind of investment this would incurr against performance to
 
 # Screenshot
 
-![ArcorOCR SCR1](./public/ArcorOCR-scr1.png)
+<div align="center">
+  <a href="https://arcorocr.com" target="_blank">
+    <img src="./public/ArcorOCR-scr1.png" alt="Logo" width="570">
+  </a>
+</div>
 
 # Running
 
