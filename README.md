@@ -24,6 +24,8 @@
     <a href="https://github.com/sam-morin/ArcorOCR-frontend?tab=readme-ov-file#screenshot">Screenshot(s)</a>
     .
     <a href="https://github.com/sam-morin/ArcorOCR-frontend?tab=readme-ov-file#running">Build/Develop</a>
+    .
+    <a href="https://github.com/sam-morin/ArcorOCR-backend-python">Backend Repo (Python)</a>
   </p>
 </div>
 
