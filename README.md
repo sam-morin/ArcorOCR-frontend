@@ -16,9 +16,9 @@
     <br /> -->
     <a href="https://arcorocr.com">View Live</a>
     ·
-    <a href="https://github.com/sam-morin/ArcorOCR-backend-python/issues">Report Bug</a>
+    <a href="https://github.com/sam-morin/ArcorOCR-frontend-python/issues">Report Bug</a>
     ·
-    <a href="https://github.com/sam-morin/ArcorOCR-backend-python/issues">Request Feature</a>
+    <a href="https://github.com/sam-morin/ArcorOCR-frontend-python/issues">Request Feature</a>
     ·
     <a href="https://github.com/sam-morin/ArcorOCR-frontend?tab=readme-ov-file#screenshot">Screenshot(s)</a>
     .
@@ -27,6 +27,8 @@
     <a href="https://github.com/sam-morin/ArcorOCR-backend-python">Backend Repo (Python)</a>
   </p>
 </div>
+
+<br/>
 
 A simple PDF OCR overlay (add/remove) tool with a public web page. 
 
