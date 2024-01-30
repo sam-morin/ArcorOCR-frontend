@@ -9,8 +9,8 @@
 
   <h1 align="center"><a href="https://arcorocr.com" target="_blank">ArcorOCR.com</a> | Frontend</h1>
 
-  <h3 align="center">
-    PDF OCR for the OCR-less
+  <p align="center">
+    <h3>PDF OCR for the OCR-less</h3>
     <!-- <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br /> -->
@@ -24,7 +24,7 @@
     <a href="https://github.com/sam-morin/ArcorOCR-frontend?tab=readme-ov-file#screenshot">Screenshot(s)</a>
     .
     <a href="https://github.com/sam-morin/ArcorOCR-frontend?tab=readme-ov-file#running">Build/Develop</a>
-  </h3>
+  </p>
 </div>
 
 A simple PDF OCR overlay (add/remove) tool with a public web page. 
