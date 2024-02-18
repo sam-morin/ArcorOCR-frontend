@@ -22,7 +22,7 @@ jobs:
     #   continue-on-error: true
 
     - name: Deploy the Docker image 1
-      run: docker run -d --rm -p 3004:3000 arcorocr-frontend
+      run: docker run -d --rm -p 3000:3000 arcorocr-frontend
 
     - name: Deploy the Docker image 2
       run: docker run -d --rm -p 3001:3000 arcorocr-frontend
