@@ -21,9 +21,11 @@ jobs:
     #   run: if [ $(docker ps -a | wc -l) -gt 1 ]; then docker ps -aq | xargs docker stop | xargs docker rm; fi
     #   continue-on-error: true
 
-    - name: Deploy the Docker image 1
+    - name: Deploy docker image 1
       run: docker run -d --rm -p 3000:3000 arcorocr-frontend
 
-    - name: Deploy the Docker image 2
+    - name: Deploy docker image 2
       run: docker run -d --rm -p 3001:3000 arcorocr-frontend
 
+    - name: Deploy docker image 3
+      run: docker run -d --rm -p 3001:3000 arcorocr-frontend
