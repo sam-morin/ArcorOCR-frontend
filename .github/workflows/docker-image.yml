@@ -35,5 +35,5 @@ jobs:
       continue-on-error: true
 
     - name: Deploy docker image 3
-      run: docker run -d --rm -p 3001:3000 arcorocr-frontend
+      run: docker run -d --rm -p 3002:3000 arcorocr-frontend
       continue-on-error: true
