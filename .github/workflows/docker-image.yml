@@ -27,6 +27,3 @@ jobs:
     - name: Deploy the Docker image 2
       run: docker run -d --rm -p 3001:3000 arcorocr-frontend
 
-    - name: Deploy the Docker image 3
-      run: docker run -d --rm -p 3002:3000 arcorocr-frontend
-
