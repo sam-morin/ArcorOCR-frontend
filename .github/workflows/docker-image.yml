@@ -17,31 +17,28 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag arcorocr-frontend --no-cache
 
-    - name: Kill container 1
-      run: docker ps -q --filter "publish=3000" | xargs docker stop | xargs docker rm
-      # run: if [ $(docker ps -a --filter "name=arcorocr-frontend" | wc -l) -gt 0 ]; then docker ps -aq --filter "name=arcorocr-frontend" | xargs docker stop | xargs docker rm; fi
-      continue-on-error: true
+    # - name: Kill container 1
+    #   run: docker ps -q --filter "publish=3000" | xargs docker stop | xargs docker rm
+    #   # run: if [ $(docker ps -a --filter "name=arcorocr-frontend" | wc -l) -gt 0 ]; then docker ps -aq --filter "name=arcorocr-frontend" | xargs docker stop | xargs docker rm; fi
+    #   continue-on-error: true
     
-    - name: Kill container 2
-      run: docker ps -q --filter "publish=3001" | xargs docker stop | xargs docker rm
-      continue-on-error: true
-
-    - name: Kill container 3
-      run: docker ps -q --filter "publish=3002" | xargs docker stop | xargs docker rm
-      continue-on-error: true
-
-    # - name: Kill all containers
-    #   run: if [ $(docker ps -a | wc -l) -gt 1 ]; then docker ps -aq | xargs docker stop | xargs docker rm; fi
+    # - name: Kill container 2
+    #   run: docker ps -q --filter "publish=3001" | xargs docker stop | xargs docker rm
     #   continue-on-error: true
 
+    # - name: Kill container 3
+    #   run: docker ps -q --filter "publish=3002" | xargs docker stop | xargs docker rm
+    #   continue-on-error: true
+
+    - name: Kill all containers
+      run: if [ $(docker ps -a | wc -l) -gt 1 ]; then docker ps -aq | xargs docker stop | xargs docker rm; fi
+      continue-on-error: true
+
     - name: Deploy docker image 1
-      run: docker run -d --rm -p 3000:3000 arcorocr-frontend
+      run: docker run -d --restart unless-stopped -p 3000:3000 arcorocr-frontend
       continue-on-error: true
 
     - name: Deploy docker image 2
-      run: docker run -d --rm -p 3001:3000 arcorocr-frontend
+      run: docker run -d --restart unless-stopped -p 3001:3000 arcorocr-frontend
       continue-on-error: true
 
-    - name: Deploy docker image 3
-      run: docker run -d --rm -p 3002:3000 arcorocr-frontend
-      continue-on-error: true
