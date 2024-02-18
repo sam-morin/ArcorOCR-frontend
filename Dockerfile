@@ -1,5 +1,6 @@
 # Use the official Node.js image as the base image
-FROM node:16-slim
+# FROM node:16-slim
+FROM docker:latest
 
 # Set the working directory in the container
 WORKDIR /app
