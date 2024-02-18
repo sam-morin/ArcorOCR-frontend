@@ -5,7 +5,7 @@ export default function Footer () {
       <>
         <span className="disabled-color" style={{ fontSize: '14px', fontFamily: 'Quicksand', paddingTop: "10px" }}>
           <i>
-              this site doesn't store, collect, or log <b>any</b> data
+              this site doesn't store, collect, or log <b>any</b> files or data
           </i>
         </span>
       </>
