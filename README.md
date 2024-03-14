@@ -15,9 +15,9 @@
 
   <p align="center">
     <h3>PDF OCR for the OCR-less | <a href="https://github.com/sam-morin/ArcorOCR-backend-python">Backend Repo (Python)</a></h3>
-    <a href="https://github.com/sam-morin/ArcorOCR-frontend-python/issues">Report Bug</a>
+    <a href="https://github.com/sam-morin/ArcorOCR-frontend/issues">Report Bug</a>
     ·
-    <a href="https://github.com/sam-morin/ArcorOCR-frontend-python/issues">Request Feature</a>
+    <a href="https://github.com/sam-morin/ArcorOCR-frontend/issues">Request Feature</a>
     .
     <a href="#screenshot">Screenshot(s)</a>
     .
