@@ -76,7 +76,7 @@ I wanted to see what kind of investment this would incurr against performance to
 
 1. Pull the source and CD
 ```shell
-git pull https://github.com/sam-morin/ArcorOCR-frontend.git && cd ArcorOCR-frontend
+git clone https://github.com/sam-morin/ArcorOCR-frontend.git && cd ArcorOCR-frontend
 ```
 
 2. Build image
@@ -93,7 +93,7 @@ docker run -d --restart unless-stopped -p SOME_PUBLIC_PORT:3000 arcorocr-fronten
 
 1. Pull the source and CD
 ```shell
-git pull https://github.com/sam-morin/ArcorOCR-frontend.git && cd ArcorOCR-frontend
+git clone https://github.com/sam-morin/ArcorOCR-frontend.git && cd ArcorOCR-frontend
 ```
 
 2. Install node modules
