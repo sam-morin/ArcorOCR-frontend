@@ -17,6 +17,13 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag arcorocr-frontend --no-cache
 
+    - name: Kill all containers
+      run: if [ $(docker ps -a | wc -l) -gt 1 ]; then docker ps -aq | xargs docker stop | xargs docker rm; fi
+      continue-on-error: true
+      
+    - name: Docker purge 
+      run: docker system prune -f
+      
     # - name: Kill container 1
     #   run: docker ps -q --filter "publish=3000" | xargs docker stop | xargs docker rm
     #   # run: if [ $(docker ps -a --filter "name=arcorocr-frontend" | wc -l) -gt 0 ]; then docker ps -aq --filter "name=arcorocr-frontend" | xargs docker stop | xargs docker rm; fi
