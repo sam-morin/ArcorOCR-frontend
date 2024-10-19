@@ -15,13 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Kill all containers
-      run: if [ $(docker ps -a | wc -l) -gt 1 ]; then docker ps -aq | xargs docker stop | xargs docker rm; fi
-      continue-on-error: true
-      
-    - name: Docker purge 
-      run: docker system prune -f
-
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag arcorocr-frontend --no-cache
       
@@ -49,4 +42,7 @@ jobs:
     - name: Deploy docker image 2
       run: docker run -d --restart unless-stopped -p 3001:3000 arcorocr-frontend
       continue-on-error: true
+
+    - name: Docker purge 
+      run: docker system prune -f
 
