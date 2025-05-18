@@ -1,5 +1,5 @@
 # Use the official Node.js image as the base image
-FROM node:22.6.0-slim
+FROM node:22.15.1-slim
 # FROM docker:latest
 
 # Set the working directory in the container
